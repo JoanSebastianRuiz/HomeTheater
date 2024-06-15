@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color_fondo: rgb(85, 13, 14)
+}
+
+header{
+    display: flex;
+    background-color: black;
+    height: 15%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    margin-bottom: 15%;
+}
+
+
+
+.d-img{
+    width:  100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.estrenos{
+    display: flex;
+    font-size: 5vw;
+    align-items: center;
+    background-color: var(--color_fondo);
+}
+
+.estrenos h2{
+    writing-mode: vertical-lr;
+    position: relative;
+    rotate: 180deg;
+    font-size: 3vh;
+    padding: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: white;
+}
+.estrenos ul{
+    background-color: var(--color_fondo);
+    display: flex;
+    height: 15em;
+    font-weight: bold;
+    list-style-type: none;
+    overflow: scroll;
+    gap: 0 1em;
+    margin: 0;
+}
+
+@keyframes show {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+.estrenos img{
+    height: 100%;
+    view-timeline-name: --image;
+    view-timeline-axis: inline;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    border-radius: 1em;
+    padding: 0.5em 0;
+}
+
+footer{
+    background-color: var(--color_fondo);
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}
+footer nav{
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    width: 100%;
+}
+footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+footer li{
+    list-style-type: none;
+}
+
+footer i{
+    color: white;
+}
+
