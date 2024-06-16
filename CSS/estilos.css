@@ -25,7 +25,7 @@ body{
     align-items: center;
 }
 
-.index__header h1, .busqueda_main__categoria h2{
+.index__header h1, .busqueda_main__categoria h2, .estrenos h2, .informacion_bad_boys_main__relacionado h2{
     background-color: white;
     background: radial-gradient(#eff1ff, rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@ body{
 }
 
 
-.index__main, .busqueda_main{
+.index__main, .busqueda_main, .informacion_bad_boys_main{
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -73,19 +73,19 @@ body{
     background-color: var(--color_fondo);
 }
 
-.estrenos h2, .busqueda_main__categoria h2{
+.estrenos h2, .busqueda_main__categoria h2, .informacion_bad_boys_main__relacionado h2{
     writing-mode: vertical-rl;
     text-orientation: mixed;
     position: relative;
     rotate: 180deg;
-    font-size: 3vh;
+    font-size: 100%;
     padding: 0.5em 1em;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: white;
 }
-.estrenos ul, .busqueda_main__categoria ul{
+.estrenos ul, .busqueda_main__categoria ul, .informacion_bad_boys_main__relacionado ul{
     background-color: var(--color_fondo);
     display: flex;
     height: 15em;
@@ -108,7 +108,7 @@ body{
     }
 }
 
-.estrenos img, .busqueda_main__categoria img{
+.estrenos img, .busqueda_main__categoria img, .informacion_bad_boys_main__relacionado img{
     display: flex;
     height: 90%;
     margin-top: 5%;
@@ -140,10 +140,11 @@ footer nav{
     width: 100%;
 }
 footer ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-items: center;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -169,6 +170,56 @@ footer i:active{
 .busqueda_header{
     display: flex;
     height: 10%;
+    padding: 1em 0;
+    margin-left: 2em;
+}
+
+.busqueda_header input{
+    position: relative;
+    left: 2em;
+    top: 0.5em;
+    outline: none;
+    height: 2.2em;
+    width: 80vw;
+    padding: 0 2em;
+    color: gray;
+    font-size: 3.5vw;
+    border: 0.1em solid black;
+    box-shadow: 0 0 0.7em black;
+    border-radius: 1em;
+    filter: opacity(0.8);
+}
+
+.busqueda_header a{
+    z-index: 1000;
+    position: absolute;
+    margin-top: 0.2em;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3vw;
+    width: 10vw;
+    height: 10vw;
+    background-color: var(--color_fondo);
+    line-height: 5.5em;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 0.2em black;
+    filter: brightness(1.2);
+}
+
+.busqueda_header i{
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: white;
+    filter: opacity(0.6);
+}
+
+.busqueda_header a:active,.busqueda_header i:active{
+    transform: scale(1.1);
 }
 
 .busqueda_main{
@@ -177,12 +228,12 @@ footer i:active{
     padding: 1em 0;
 }
 
-.busqueda_main__categoria{
+.busqueda_main__categoria, .informacion_bad_boys_main__relacionado{
     display: flex;
     align-items: center;
 }
 
-.busqueda_main__categoria h2{
+.busqueda_main__categoria h2, .informacion_bad_boys_main__relacionado h2{
     display: flex;
     width: 20vw;
     line-height: 1.3em;
@@ -190,12 +241,41 @@ footer i:active{
     padding: 0;
     font-weight: 900;
     font-family: Arial, Helvetica, sans-serif;
+    filter: brightness(1.4);
 }
 
-.busqueda_main__categoria ul{
+.busqueda_main__categoria ul, .informacion_bad_boys_main__relacionado ul{
     width: 80vw;
 }
 
+/*Estilos informacion*/
+.informacion_bad_boys_main__informacion_pelicula{
+    gap: 1em;
+}
+
+.informacion_bad_boys_main__informacion_pelicula img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.informacion_bad_boys_main__informacion_pelicula__opciones{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+}
+
+.informacion_bad_boys_main__informacion_pelicula__opciones li{
+    list-style-type: none;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+.informacion_bad_boys_main__informacion_pelicula__opciones a{
+    text-decoration: none;
+    color: white;
+    
+}
 
 
 
