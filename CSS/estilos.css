@@ -25,7 +25,7 @@ body{
     align-items: center;
 }
 
-.index__header h1{
+.index__header h1, .busqueda_main__categoria h2{
     background-color: white;
     background: radial-gradient(#eff1ff, rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
@@ -52,7 +52,7 @@ body{
 }
 
 
-.index__main{
+.index__main, .busqueda_main{
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -73,17 +73,19 @@ body{
     background-color: var(--color_fondo);
 }
 
-.estrenos h2{
-    writing-mode: vertical-lr;
+.estrenos h2, .busqueda_main__categoria h2{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     position: relative;
     rotate: 180deg;
     font-size: 3vh;
     padding: 0.5em 1em;
+    margin: 0;
     text-transform: uppercase;
     letter-spacing: 0.3em;
     color: white;
 }
-.estrenos ul{
+.estrenos ul, .busqueda_main__categoria ul{
     background-color: var(--color_fondo);
     display: flex;
     height: 15em;
@@ -92,7 +94,7 @@ body{
     overflow: scroll;
     gap: 0 1em;
     margin: 0;
-    padding: 0;
+    padding: 0 0.5em;
 }
 
 @keyframes show {
@@ -106,8 +108,10 @@ body{
     }
 }
 
-.estrenos img{
-    height: 100%;
+.estrenos img, .busqueda_main__categoria img{
+    display: flex;
+    height: 90%;
+    margin-top: 5%;
     view-timeline-name: --image;
     view-timeline-axis: inline;
     animation-timeline: --image;
@@ -115,7 +119,7 @@ body{
     animation-range: entry 25% cover 50%;
     animation-fill-mode: both;
     border-radius: 1em;
-    padding: 0.5em 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.708);
 }
 
 footer{
@@ -161,3 +165,41 @@ footer i:active{
 
 
 /*Estilos busqueda*/
+
+.busqueda_header{
+    display: flex;
+    height: 10%;
+}
+
+.busqueda_main{
+    gap: 1em;
+    overflow: scroll;
+    padding: 1em 0;
+}
+
+.busqueda_main__categoria{
+    display: flex;
+    align-items: center;
+}
+
+.busqueda_main__categoria h2{
+    display: flex;
+    width: 20vw;
+    line-height: 1.3em;
+    align-items: center;
+    padding: 0;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.busqueda_main__categoria ul{
+    width: 80vw;
+}
+
+
+
+
+
+
+
+
