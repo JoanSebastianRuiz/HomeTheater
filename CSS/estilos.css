@@ -21,8 +21,8 @@
     footer{
         display: none;
     }
-    .index_main__escritorio{
-        display: visible;
+    .pantalla_escritorio{
+        display: flex;
     }
 }
 
@@ -36,7 +36,7 @@
     footer{
         display: flex;
     }
-    .index_main__escritorio{
+    .pantalla_escritorio{
         display: none;
     }
 }
@@ -120,11 +120,10 @@ body{
     font-weight: 900;
     top: -14em;
     font-size: 7vw;
-    background-color: var(--color_fondo_link);
-    filter: brightness(5);
-    border: 0.2em solid rgb(255, 217, 0);
     padding: 0.5em;
-    color: white;
+    color: var(--color_fondo);
+    background-color: red;
+    border-radius: 50%;
 }
 
 .index_main__estrenos{
@@ -513,6 +512,39 @@ footer i:active{
     padding: 0.5em;
 }
 
+/*Pantalla no disponible*/
+
+.pantalla_escritorio{
+    margin-top: 13em;
+    padding: 0 7em;
+    width: 100%;
+    color: bisque;
+    align-items: center;
+    justify-content: center;
+}
+.pantalla_escritorio span{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em;
+    align-items: center;
+}
+.pantalla_escritorio h1{
+    font-size: 5vw;
+    padding: 0 5em;
+    text-align: center;
+}
+
+.pantalla_escritorio p{
+    text-align: justify;
+    padding: 1em 0;
+    width: 50vw;
+}
+
+.pantalla_escritorio i{
+    color: white;
+    font-size: 10em;
+    padding-right: 0.1rem;
+}
 
 
 
