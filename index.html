@@ -10,62 +10,48 @@
 </head>
 
 <body>
-    <header class="index__header">
+    <header class="index_header">
         <h1>Home Theater</h1>
     </header>
 
-    <main class="index__main">
-        <section class="slider">
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
+    <main class="index_main">
+        <section class="index_main__slider">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active d-item">
-                    <img src="Images/Thriller/abigail.jpg" class="d-block w-100 d-img" alt="...">
-                    <div class="carousel-caption top-0 mt-4">
-                        <p class="mt-5 fs-3 text-uppercase">
-                            50%
-                        </p>
-                        <h1 class="display-1 fw-bolder text-capitalize">Intensamente 2</h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Informacion</button>
+                  <div class="carousel-item active">
+                    <img src="Images/Ciencia ficción/el_reino_del_planeta_de_los_simios.jpg" class="d-block w-100" alt="Poster de Abigail">
+                    <div class="carousel-caption">
+                        <h3>30%</h3>
+                        <h2>El planeta de los simios: nuevo reino</h2>
                     </div>
                   </div>
-                  <div class="carousel-item  d-item">
-                    <img src="Images/Infantiles/gru_4_mi_villano_favorito.jpg" class="d-block w-100 d-img" alt="...">
-                    <div class="carousel-caption top-0 mt-4">
-                        <p class="mt-5 fs-3 text-uppercase">
-                            Descubre la ciudad 
-                        </p>
-                        <h1 class="display-1 fw-bolder text-capitalize">New York</h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Informacion</button>
+                  <div class="carousel-item">
+                    <img src="Images/Infantiles/luca.jpg" class="d-block w-100" alt="Poster Mi villano favorito 4">
+                    <div class="carousel-caption">
+                        <h3>40%</h3>
+                        <h2>Luca</h2>
                     </div>
-                  </div>
-                  <div class="carousel-item  d-item">
-                    <img src="Images/Accion/deadpool_y_lobezno-cartel.jpg" class="d-block w-100 d-img" alt="...">
-                    <div class="carousel-caption top-0 mt-4">
-                        <p class="mt-5 fs-3 text-uppercase">
-                            Descubre la ciudad 
-                        </p>
-                        <h1 class="display-1 fw-bolder text-capitalize">New York</h1>
-                        <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Informacion</button>
-                    </div>
-                  </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <div class="carousel-item">
+                    <img src="Images/Accion/el_cuervo.jpg" class="d-block w-100" alt="Poster Deadpool y Wolverine">
+                    <div class="carousel-caption">
+                        <h3>20%</h3>
+                        <h2>El cuervo</h2>
+                    </div>
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
         </section>
 
-        <section class="estrenos">
+        <section class="index_main__estrenos">
             <div>
                 <h2>Estrenos</h2>
             </div>
@@ -81,7 +67,7 @@
                 <li><a href=""><img src="Images/Comedia/padre_no_hay_mas_que_uno_4.jpg" alt=""></a></li>
                 <li><a href=""><img src="Images/Infantiles/vaiana_2.jpg" alt=""></a></li>
                 <li><a href=""><img src="Images/Accion/kill_boy.jpg" alt=""></a></li>
-                <li><a href=""><img src="Images/Infantiles/luca.jpg" alt=""></a></li>
+                <li><a href=""><img src="Images/Infantiles/robot_salvaje.jpg" alt=""></a></li>
                 <li><a href=""><img src="Images/Ciencia ficción/twisters.jpg" alt=""></a></li>
 
             </ul>
