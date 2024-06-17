@@ -17,6 +17,23 @@
 2. Instalar la extension live server (si no se tiene instalada)
 3. Oprimir click derecho y seleccionar open with live server
 
+### Wireframes
+
+- Vista inicio
+
+![wireframe1](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/542625aa-f8c2-4d98-bf10-6edad5e92c42)
+
+- Vista busqueda
+
+![wireframe2](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/c8ecda70-d9a1-4886-8396-01e30f7fc813)
+
+- Vista información de pelicula
+
+![wireframe3](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/4bcb0729-1af0-41cd-a311-07b991faa364)
+
+-Vista pago
+
+![wireframe4](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/91502b93-04d5-4f53-a43c-f08e76dd05af)
 
 ### Uso
 
