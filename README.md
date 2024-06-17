@@ -48,6 +48,7 @@
 - Igualmente, al seleccionar las peliculas Bad Boys o Intensamente 2 se le llevara a la vista que tiene la informacion de cada pelicula, en la parte superior de esta vista ahí una flecha que le permite volver a la pantalla de busqueda, enseguida se encuentra el poster de la pelicula y su titulo, las opciones de comprar o alquilar la pelicula, luego las opciones de agregar a favoritos, compartir y ver el trailer, y despues mas informacion de esta, como su categoria, argumento, calificacion, año y duracion. Al finalizar esa sección se encuentra un apartado donde se pueden observar peliculas relacionadas con la categoria de la pelicula.
 
 - Por ultimo, al seleccionar las opciones de alquilar o comprar pelicula en las peliculas Bad Boys o Intensamente, se le dirigira a la vista del proceso de pago, donde se tienen campos para llenar la información necesaria para este proceso, como datos asociados al cliente y a la tarjeta con la que realizará el pago. Y al final se encuentra un botón para realizar el pago.
-## Author
+
+## Autor
 
 **Joan Sebastian Ruiz Angarita**
