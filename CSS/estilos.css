@@ -496,7 +496,7 @@ footer i:active{
     margin-top: 13em;
     padding: 0 7em;
     width: 100%;
-    color: bisque;
+    color: var(--color_texto);
     align-items: center;
     justify-content: center;
 }
@@ -507,23 +507,34 @@ footer i:active{
     align-items: center;
 }
 .pantalla_escritorio h1{
-    font-size: 5vw;
-    padding: 0 5em;
+    font-size: 15vw;
+    padding: 0 0.2em;
     text-align: center;
 }
 
 .pantalla_escritorio p{
     text-align: justify;
     padding: 1em 0;
+    padding-right: 1em;
+    font-size: 3vw;
     width: 50vw;
 }
 
 .pantalla_escritorio i{
-    color: white;
-    font-size: 10em;
+    color: var(--color_texto);
+    font-size: 30vw;
     padding-right: 0.1rem;
+    animation: hand 2s cubic-bezier(.27,.75,.27,.76) infinite;
 }
 
+@keyframes hand{
+    from{
+        scale: 0.8;
+    }
+    to{
+        scale: 1;
+    }
+}
 
 
 
