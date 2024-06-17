@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+</head>
+<body>
+    <header class="pago_header">
+        <a href="busqueda.html"><i class="fas fa-arrow-left"></i></i></a>
+    </header>
+
+    <main class="pago_main">
+        <h2>Proceso de pago</h2>
+        <p>Llena los siguientes datos para realizar el proceso de pago.</p>
+        <form action="miserver.com" method="post">            
+            <label for="pais">Pais</label>
+            <select name="pais" id="pais" required>
+                <option value="Colombia" selected>Colombia</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Espana">España</option>
+                <option value="Inglaterra">Inglaterra</option>
+            </select>
+
+            <label for="departamento">Departamento</label>
+            <select name="departamento" id="departamento" required>
+                <option value="Santander" selected>Santander</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Boyaca">Boyaca</option>
+                <option value="Norte de Santander">Norte de Santander</option>
+            </select>
+
+            <label for="ciudad">Ciudad</label>
+            <select name="ciudad" id="ciudad" required>
+                <option value="Bucaramanga" selected>Bucaramanga</option>
+                <option value="Floridablanca">Floridablanca</option>
+                <option value="Giron">Girón</option>
+                <option value="Piedecuesta">Piedecuesta</option>
+            </select>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección completa" required>
+
+            <label for="telefono">Número de teléfono</label>
+            <input type="number" name="telefono" id="telefono" placeholder="Ingrese su número telefónico" min="1000000000" max="9999999999" required>
+
+            <h3>Indica la información de la tarjeta:</h3>
+            <label for="nombre">Nombre en la tarjeta</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre tal como aparece en la tarjeta" required>
+            <section class="pago_main__container">
+                <section class="pago_main__container__fecha_y_cvv">
+                    <label for="mes">Fecha de vencimiento</label>
+                    <select name="mes" id="mes" required>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06" selected>06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+
+                    <select name="anio" id="anio" required>
+                        <option value="2024" selected>2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                    </select>
+
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" name="cvv" min="0" max="999" required>
+                </section>
+                    
+                <ul>
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-brands fa-cc-paypal"></i></li>
+                    <li><i class="fa-brands fa-cc-amex"></i></li>
+                </ul>
+            </section>
+
+            <input type="submit" value="Pagar" id="pagar">
+        </form>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house "></i></a></li>
+                <li><a href=""><i class="fa-regular fa-circle-play "></i></a></li>
+                <li><a href="busqueda.html"><i class="fas fa-search "></i></a></li>
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

@@ -5,7 +5,10 @@
 }
 
 :root{
-    --color_fondo: rgb(85, 13, 14)
+    --color_fondo: rgb(85, 13, 14);
+    --color_texto: rgba(255, 255, 255, 0.829);
+    --color_fondo_link: rgba(255, 217, 0, 0.587);
+
 }
 
 /*Estilos index*/
@@ -16,7 +19,7 @@ body{
     background-color: var(--color_fondo);
 }
 
-.index__header{
+.index__header, .informacion_header, .pago_header{
     display: flex;
     justify-content: space-between;
     padding:0.5em 1em;
@@ -25,7 +28,7 @@ body{
     align-items: center;
 }
 
-.index__header h1, .busqueda_main__categoria h2, .estrenos h2, .informacion_bad_boys_main__relacionado h2{
+.index__header h1, .busqueda_main__categoria h2, .estrenos h2, .informacion_main__relacionado h2, .informacion_main__informacion_pelicula h2{
     background-color: white;
     background: radial-gradient(#eff1ff, rgb(0, 0, 0));
     -webkit-text-fill-color: transparent;
@@ -43,7 +46,7 @@ body{
     
 }
 
-.index__header i{
+.index__header i, pago_header i{
     color: white;
     font-size: 8vw;
     border: 0.1em solid white;
@@ -52,7 +55,7 @@ body{
 }
 
 
-.index__main, .busqueda_main, .informacion_bad_boys_main{
+.index__main, .busqueda_main, .informacion_main, .pago_main{
     display: flex;
     flex-direction: column;
     height: 75%;
@@ -73,7 +76,7 @@ body{
     background-color: var(--color_fondo);
 }
 
-.estrenos h2, .busqueda_main__categoria h2, .informacion_bad_boys_main__relacionado h2{
+.estrenos h2, .busqueda_main__categoria h2, .informacion_main__relacionado h2{
     writing-mode: vertical-rl;
     text-orientation: mixed;
     position: relative;
@@ -85,7 +88,7 @@ body{
     letter-spacing: 0.3em;
     color: white;
 }
-.estrenos ul, .busqueda_main__categoria ul, .informacion_bad_boys_main__relacionado ul{
+.estrenos ul, .busqueda_main__categoria ul, .informacion_main__relacionado ul{
     background-color: var(--color_fondo);
     display: flex;
     height: 15em;
@@ -108,7 +111,7 @@ body{
     }
 }
 
-.estrenos img, .busqueda_main__categoria img, .informacion_bad_boys_main__relacionado img{
+.estrenos img, .busqueda_main__categoria img, .informacion_main__relacionado img{
     display: flex;
     height: 90%;
     margin-top: 5%;
@@ -130,6 +133,7 @@ footer{
     width: 100%;
     height: 10%;
     z-index: 1000;
+    box-shadow: 0 0 0.2em black;
 }
 
 footer nav{
@@ -154,7 +158,7 @@ footer li{
     list-style-type: none;
 }
 
-footer i{
+footer i, .informacion_header i, .pago_header i{
     color: white;
     font-size: 8vw;
     filter: opacity(0.7);
@@ -175,15 +179,18 @@ footer i:active{
 }
 
 .busqueda_header input{
-    position: relative;
     left: 2em;
     top: 0.5em;
+    width: 80vw;
+    font-size: 3.5vw;
+}
+
+.busqueda_header input, .pago_main input, .pago_main select{
+    position: relative;
     outline: none;
     height: 2.2em;
-    width: 80vw;
     padding: 0 2em;
     color: gray;
-    font-size: 3.5vw;
     border: 0.1em solid black;
     box-shadow: 0 0 0.7em black;
     border-radius: 1em;
@@ -218,8 +225,9 @@ footer i:active{
     filter: opacity(0.6);
 }
 
-.busqueda_header a:active,.busqueda_header i:active{
+.busqueda_header a:active,.busqueda_header i:active, .informacion_main__informacion_pelicula__links li:active{
     transform: scale(1.1);
+    filter: brightness(1.4);
 }
 
 .busqueda_main{
@@ -228,12 +236,12 @@ footer i:active{
     padding: 1em 0;
 }
 
-.busqueda_main__categoria, .informacion_bad_boys_main__relacionado{
+.busqueda_main__categoria, .informacion_main__relacionado{
     display: flex;
     align-items: center;
 }
 
-.busqueda_main__categoria h2, .informacion_bad_boys_main__relacionado h2{
+.busqueda_main__categoria h2, .informacion_main__relacionado h2{
     display: flex;
     width: 20vw;
     line-height: 1.3em;
@@ -244,39 +252,205 @@ footer i:active{
     filter: brightness(1.4);
 }
 
-.busqueda_main__categoria ul, .informacion_bad_boys_main__relacionado ul{
+.busqueda_main__categoria ul, .informacion_main__relacionado ul{
     width: 80vw;
 }
 
 /*Estilos informacion*/
-.informacion_bad_boys_main__informacion_pelicula{
-    gap: 1em;
+.informacion_header i, .pago_header i{
+    width: 80%;
 }
 
-.informacion_bad_boys_main__informacion_pelicula img{
+.informacion_header i:active, .pago_header i:active{
+    color: var(--color_fondo_link);
+}
+
+.informacion_main__informacion_pelicula{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--color_fondo);
+}
+
+.informacion_main__informacion_pelicula h2{
+    filter: brightness(1.4);
+}
+
+.informacion_main__informacion_pelicula img{
     width: 100%;
     object-fit: cover;
 }
 
-.informacion_bad_boys_main__informacion_pelicula__opciones{
+.informacion_main__informacion_pelicula__opciones{
     display: flex;
     flex-direction: column;
     gap: 1em;
     align-items: center;
 }
 
-.informacion_bad_boys_main__informacion_pelicula__opciones li{
+.informacion_main__informacion_pelicula__opciones li{
     list-style-type: none;
-    padding: 1em;
-    border: 1px solid black;
 }
 
-.informacion_bad_boys_main__informacion_pelicula__opciones a{
+.informacion_main__informacion_pelicula__opciones a, #pagar{
+    display: flex;
+    height: 100%;
     text-decoration: none;
-    color: white;
-    
+    color: var(--color_texto);
+    font-weight: bold;
+    font-size: 4.5vw;
+    padding: 1em;
+    box-shadow: 0 0 0.1em black;
+    width: 70vw;
+    background-color: var(--color_fondo_link);
+    filter: brightness(1.2);
+    justify-content: center;
 }
 
+.informacion_main__informacion_pelicula__opciones a:active, #pagar:active{
+    background-color: rgba(255, 217, 0, 0.748);
+}
+
+.informacion_main__informacion_pelicula__links{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    justify-items: center;
+}
+
+.informacion_main__informacion_pelicula__links li{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    color: var(--color_texto);
+    font-size: 3.5vw;
+    gap: 0.2em;
+    margin: 0.5em 0;
+}
+
+.informacion_main__informacion_pelicula__links li:active, .informacion_main__informacion_pelicula__links i:active{
+    color: var(--color_fondo_link);
+}
+
+.informacion_main__informacion_pelicula__links i{
+    color: var(--color_texto);
+    font-size: 5vw;
+}
+
+.informacion_main__informacion_pelicula p, .informacion_main__informacion_pelicula__datos{
+    color: var(--color_texto);
+    font-size: 4vw;
+    padding: 0 1.5em;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.informacion_main__informacion_pelicula__datos{
+    filter: opacity(0.8);
+    list-style-type: none;
+    font-size: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.3em;
+    margin-bottom: 1em;
+}
+
+/*Estilos pago*/
+
+.pago_main{
+    padding: 0 2em 15% 2em;
+    gap: 1em;
+}
+
+.pago_main form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+#direccion, #telefono, #nombre{
+    width: 80vw;
+}
+
+#ciudad, #departamento, #pais{
+    width: 45vw;
+}
+#mes, #cvv{
+    width: 23vw;
+}
+#anio {
+    width: 26vw;
+}
+
+.pago_main input, .pago_main select{
+    font-size: 3vw;
+    text-align: center;
+}
+
+.pago_main option{
+    font-size: 3vw;
+    background-color: rgba(85, 13, 14, 0.967);
+    color: var(--color_texto);
+}
+
+.pago_main select:active, .pago_main input:active, .busqueda_header input:active{
+    background-color: antiquewhite;
+}
+
+.pago_main label, .pago_main p{
+    color: var(--color_texto);
+    font-size: 4vw;
+}
+
+.pago_main h2,.pago_main h3{
+    color: rgb(211, 211, 211);
+}
+
+.pago_main h2{
+    font-weight: bold;
+    font-size: 8vw;
+    padding-bottom: 0.3em;
+}
+
+.pago_main h3{
+    font-weight: bold;
+    font-size: 5vw;
+    padding-top: 1em;
+    padding-bottom: 0.3em;
+}
+
+.pago_main__container{
+    display: flex;
+    gap: 2em;
+}
+
+.pago_main__container__fecha_y_cvv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.pago_main__container ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    gap: 0.2em;
+    padding-top: 2em;
+}
+
+.pago_main__container i{
+    font-size: 13vw;
+}
+
+#pagar{
+    width: 25vw;
+    margin-top: 1em;
+    padding: 0.5em;
+}
 
 
 
