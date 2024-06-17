@@ -11,6 +11,36 @@
 
 }
 
+@media (min-width: 601px){
+    .index_header, .busqueda_header, .informacion_header, .pago_header{
+        display: none;
+    }
+    .index_main__movil, .busqueda_main__movil, .informacion_main__movil, .pago_main__movil{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .index_main__escritorio{
+        display: visible;
+    }
+}
+
+@media (max-width: 601px){
+    .index_header, .busqueda_header .informacion_header, .pago_header{
+        display: flex;
+    }
+    .index_main__movil, .busqueda_main__movil, .informacion_main__movil, .pago_main__movil{
+        display: visible;
+    }
+    footer{
+        display: flex;
+    }
+    .index_main__escritorio{
+        display: none;
+    }
+}
+
 /*Estilos index*/
 
 body{
@@ -20,7 +50,6 @@ body{
 }
 
 .index_header, .informacion_header, .pago_header{
-    display: flex;
     justify-content: space-between;
     padding:0.5em 1em;
     background-color: var(--color_fondo);
@@ -84,6 +113,7 @@ body{
     color: bisque;
     font-weight: bold;
 }
+
 
 .carousel-caption h3{
     position: absolute;
@@ -157,7 +187,6 @@ footer{
     background-color: var(--color_fondo);
     bottom: 0;
     position: fixed;
-    display: flex;
     width: 100%;
     height: 10%;
     z-index: 1000;
@@ -200,7 +229,6 @@ footer i:active{
 /*Estilos busqueda*/
 
 .busqueda_header{
-    display: flex;
     height: 10%;
     padding: 1em 0;
     margin-left: 2em;
@@ -396,7 +424,7 @@ footer i:active{
     gap: 0.7em;
 }
 
-#direccion, #telefono, #nombre{
+#direccion, #telefono, #nombre, #numero_tarjeta{
     width: 80vw;
 }
 
@@ -423,6 +451,11 @@ footer i:active{
 
 .pago_main select:active, .pago_main input:active, .busqueda_header input:active{
     background-color: antiquewhite;
+}
+
+.pago_main p{
+    padding-bottom: 1em;
+    text-align: justify;
 }
 
 .pago_main label, .pago_main p{
