@@ -1,21 +1,48 @@
-# Proyecto HTML-CSS Home Theater
+# HomeTheater
 
-> El presente proyecto es la maquetación visual realizada mediante HTML y CSS de una pagina de venta y alquiler de peliculas para dispositivos moviles.
+Maquetación visual realizada mediante HTML y CSS de una pagina de venta y alquiler de peliculas para dispositivos moviles.
 
-## Desarrollado con
 
-- HTML
-- CSS
-  
-### Prerequisitos
+## Tabla de contenido
 
-- Text editor(VsCode)
+- [Comenzando](#comenzando)
+  * [Pre-requisitos](#pre-requisitos)
+  * [Instalación](#instalación)
+- [Wireframes](#wireframes)
+- [Maquetación visual](#maquetación-visual)
+- [Funcionamiento](#funcionamiento)
+- [Construido con](#construido-con)
+- [Autores](#autores)
 
-### Visualizar el proyecto
 
-1. Clonar el repositorio https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN en VsCode
-2. Instalar la extension live server (si no se tiene instalada)
-3. Oprimir click derecho y seleccionar open with live server
+## Comenzando
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+
+### Pre-requisitos
+
+- Text editor(Visual Studio Code)
+- Instalar extensión live server
+
+### Instalación
+
+Primero se debe descargar el proyecto como ZIP
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/c2d581a5-4554-4457-8284-3a54b83ba8de)
+
+En seguida descomprimir el archivo, abrir el proyecto en Visual Studio Code y seleccionar el archivo index.html
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/3943f002-b7d8-4f87-9c8e-df2963df8263)
+
+Por ultimo, presionar go live, con lo que obtendra la siguiente vista dado que no esta disponible para PC
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/a212d77f-5916-42f2-b066-3d6f09c93c11)
+
+Para visualizar el proyecto en un computador puede dar click derecho, seleccionar inspeccionar y disminuir el tamaño de pantalla, con lo que obtendría la siguiente vista:
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/c9e168d6-bd29-4554-8753-fc008e1f4de9)
+
 
 ### Wireframes
 
@@ -35,7 +62,30 @@
 
 ![wireframe4](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/91502b93-04d5-4f53-a43c-f08e76dd05af)
 
-### Uso
+
+
+## Maquetación visual
+
+- Vista inicio
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/7b9070e0-87f8-4907-b067-086cae79ad03)
+
+- Vista busqueda
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/a0f40863-10fb-4f2c-bb72-253511aed9a3)
+
+- Vista información de pelicula
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/1c55d804-d51a-4b2f-b0d9-d09332715450)
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/2532b026-55e0-4e4f-8fd9-d353b1fa6226)
+
+-Vista pago
+
+![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/ea7862b4-cf96-4316-8e43-7f2221cfb414)
+
+
+## Funcionamiento
 
 - El proyecto tiene cuatro vistas funcionales que son el inicio(index.html), la vista de busqueda(busqueda.html), una vista donde sale la informacion de la pelicula, que se realizo para las peliculas de Bad Boys 4 y Intensamente 2(informacion_bad_boys.html y informacion_intensamente_2.html respectivamente) y por ultimo la vista donde se realizaria el pago al seleccionar alquilar o comprar pelicula (pago.html)
 
@@ -49,6 +99,19 @@
 
 - Por ultimo, al seleccionar las opciones de alquilar o comprar pelicula en las peliculas Bad Boys o Intensamente, se le dirigira a la vista del proceso de pago, donde se tienen campos para llenar la información necesaria para este proceso, como datos asociados al cliente y a la tarjeta con la que realizará el pago. Y al final se encuentra un botón para realizar el pago.
 
-## Autor
 
-**Joan Sebastian Ruiz Angarita**
+## Construido con
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+* HTML
+* CSS
+
+
+## Autores
+
+_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
+
+* **Joan Sebastian Ruiz Angarita** 
+
+---
