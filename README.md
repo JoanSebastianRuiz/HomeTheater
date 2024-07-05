@@ -9,7 +9,7 @@ Maquetación visual realizada mediante HTML y CSS de una pagina de venta y alqui
   * [Pre-requisitos](#pre-requisitos-)
   * [Instalación](#instalación-)
 - [Wireframes](#wireframes-)
-- [Maquetación visual](#maquetación-visual-)
+- [Maquetación visual](#maquetación-visual-%EF%B8%8F)
 - [Funcionamiento](#funcionamiento-)
 - [Construido con](#construido-con-)
 - [Autor](#autor-)
