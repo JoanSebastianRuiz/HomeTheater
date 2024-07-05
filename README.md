@@ -3,29 +3,29 @@
 Maquetación visual realizada mediante HTML y CSS de una pagina de venta y alquiler de peliculas para dispositivos moviles.
 
 
-## Tabla de contenido
+## Tabla de contenido 📋
 
-- [Comenzando](#comenzando)
-  * [Pre-requisitos](#pre-requisitos)
-  * [Instalación](#instalación)
-- [Wireframes](#wireframes)
-- [Maquetación visual](#maquetación-visual)
-- [Funcionamiento](#funcionamiento)
-- [Construido con](#construido-con)
-- [Autor](#autor)
+- [Comenzando](#comenzando-)
+  * [Pre-requisitos](#pre-requisitos-)
+  * [Instalación](#instalación-)
+- [Wireframes](#wireframes-)
+- [Maquetación visual](#maquetación-visual-)
+- [Funcionamiento](#funcionamiento-)
+- [Construido con](#construido-con-)
+- [Autor](#autor-)
 
 
-## Comenzando
+## Comenzando 🚀
 
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 
-### Pre-requisitos
+### Pre-requisitos 📝
 
 - Text editor(Visual Studio Code)
 - Instalar extensión live server
 
-### Instalación
+### Instalación 🔧
 
 Primero se debe descargar el proyecto como ZIP
 
@@ -44,7 +44,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/c9e168d6-bd29-4554-8753-fc008e1f4de9)
 
 
-### Wireframes
+### Wireframes 🎨
 
 - Vista inicio
 
@@ -64,7 +64,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 
 
 
-## Maquetación visual
+## Maquetación visual 🖼️
 
 - Vista inicio
 
@@ -85,7 +85,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/ea7862b4-cf96-4316-8e43-7f2221cfb414)
 
 
-## Funcionamiento
+## Funcionamiento ⚙️
 
 - El proyecto tiene cuatro vistas funcionales que son el inicio(index.html), la vista de busqueda(busqueda.html), una vista donde sale la informacion de la pelicula, que se realizo para las peliculas de Bad Boys 4 y Intensamente 2(informacion_bad_boys.html y informacion_intensamente_2.html respectivamente) y por ultimo la vista donde se realizaria el pago al seleccionar alquilar o comprar pelicula (pago.html)
 
@@ -100,7 +100,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 - Por ultimo, al seleccionar las opciones de alquilar o comprar pelicula en las peliculas Bad Boys o Intensamente, se le dirigira a la vista del proceso de pago, donde se tienen campos para llenar la información necesaria para este proceso, como datos asociados al cliente y a la tarjeta con la que realizará el pago. Y al final se encuentra un botón para realizar el pago.
 
 
-## Construido con
+## Construido con 🛠️
 
 _Menciona las herramientas que utilizaste para crear tu proyecto_
 
@@ -108,7 +108,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * CSS
 
 
-## Autor
+## Autor 🧑
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
