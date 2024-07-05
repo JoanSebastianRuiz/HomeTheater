@@ -12,7 +12,7 @@ Maquetación visual realizada mediante HTML y CSS de una pagina de venta y alqui
 - [Maquetación visual](#maquetación-visual)
 - [Funcionamiento](#funcionamiento)
 - [Construido con](#construido-con)
-- [Autores](#autores)
+- [Autor](#autor)
 
 
 ## Comenzando
@@ -108,7 +108,7 @@ _Menciona las herramientas que utilizaste para crear tu proyecto_
 * CSS
 
 
-## Autores
+## Autor
 
 _Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
