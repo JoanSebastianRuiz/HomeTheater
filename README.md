@@ -58,7 +58,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 
 ![wireframe3](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/4bcb0729-1af0-41cd-a311-07b991faa364)
 
--Vista pago
+- Vista pago
 
 ![wireframe4](https://github.com/JoanSebastianRuiz/PROYECTO-FILTRO_RUIZJOAN_ANGARITASEBASTIAN/assets/166556013/91502b93-04d5-4f53-a43c-f08e76dd05af)
 
@@ -80,7 +80,7 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/2532b026-55e0-4e4f-8fd9-d353b1fa6226)
 
--Vista pago
+- Vista pago
 
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/ea7862b4-cf96-4316-8e43-7f2221cfb414)
 
