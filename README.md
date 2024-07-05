@@ -10,8 +10,8 @@ Maquetación visual realizada mediante HTML y CSS de una pagina de venta y alqui
   * [Instalación](#instalación-)
 - [Wireframes](#wireframes-)
 - [Maquetación visual](#maquetación-visual-%EF%B8%8F)
-- [Funcionamiento](#funcionamiento-)
-- [Construido con](#construido-con-)
+- [Funcionamiento](#funcionamiento-%EF%B8%8F)
+- [Construido con](#construido-con-%EF%B8%8F)
 - [Autor](#autor-)
 
 
