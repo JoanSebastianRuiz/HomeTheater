@@ -31,7 +31,7 @@ Primero se debe descargar el proyecto como ZIP
 
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/c2d581a5-4554-4457-8284-3a54b83ba8de)
 
-En seguida descomprimir el archivo, abrir el proyecto en Visual Studio Code y seleccionar el archivo index.html
+En seguida, descomprimir el archivo, abrir el proyecto en Visual Studio Code y seleccionar el archivo index.html
 
 ![image](https://github.com/JoanSebastianRuiz/HomeTheater/assets/166556013/3943f002-b7d8-4f87-9c8e-df2963df8263)
 
@@ -102,15 +102,11 @@ Para visualizar el proyecto en un computador puede dar click derecho, selecciona
 
 ## Construido con 🛠️
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
 * HTML
 * CSS
 
 
 ## Autor 🧑
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
 
 * **Joan Sebastian Ruiz Angarita** 
 
