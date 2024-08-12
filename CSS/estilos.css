@@ -12,23 +12,34 @@
 }
 
 @media (min-width: 601px){
+    .index_header, .informacion_header, .pago_header{
+        height: 12rem;
+    }
+    .index_main__slider img{
+        width:  100%;
+        object-fit: cover;
+    }
     .index_header, .busqueda_header, .informacion_header, .pago_header{
-        display: none;
+        display: flex;
     }
     .index_main__movil, .busqueda_main__movil, .informacion_main__movil, .pago_main__movil{
-        display: none;
+        display: visible;
     }
     footer{
-        display: none;
+        display: flex;
     }
     .pantalla_escritorio{
-        display: flex;
+        display: none ;
     }
 }
 
 @media (max-width: 601px){
     .index_header, .busqueda_header .informacion_header, .pago_header{
         display: flex;
+    }
+    .index_main__slider img{
+        width:  100%;
+        object-fit: cover;
     }
     .index_main__movil, .busqueda_main__movil, .informacion_main__movil, .pago_main__movil{
         display: visible;
@@ -53,7 +64,7 @@ body{
     justify-content: space-between;
     padding:0.5em 1em;
     background-color: var(--color_fondo);
-    height: 15%;
+    
     align-items: center;
 }
 
@@ -92,10 +103,6 @@ body{
     background-color: var(--color_fondo);
 }
 
-.index_main__slider img{
-    width:  100%;
-    object-fit: cover;
-}
 
 .carousel-caption{
     display: flex;
@@ -490,7 +497,11 @@ footer i:active{
     padding: 0.5em;
 }
 
-/*Pantalla no disponible*/
+
+
+/*
+
+Pantalla no disponible
 
 .pantalla_escritorio{
     margin-top: 13em;
@@ -537,5 +548,5 @@ footer i:active{
 }
 
 
-
+*/
 
